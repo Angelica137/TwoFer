@@ -7,4 +7,8 @@ public class TwoFerTest {
 		assertEquals("One for you, one for me.", new TwoFer().getTwoFer());
 	}
 
+	public void testThatTwoFerReturnsCorrectStringWithName() {
+		assertEquals("One for Anna, for me me.", new TwoFer("Anna").getTwoFer());
+	}
+
 }
