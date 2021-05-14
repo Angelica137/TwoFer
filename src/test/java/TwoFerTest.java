@@ -4,11 +4,11 @@ import org.junit.Test;
 public class TwoFerTest {
 	@Test
 	public void testThatTwoFerReturnsCorrectStringNoName() {
-		assertEquals("One for you, one for me.", new TwoFer().getTwoFer());
+		assertEquals("One for you, one for me.", new TwoFer().getTwoFer(null));
 	}
 
 	public void testThatTwoFerReturnsCorrectStringWithName() {
-		assertEquals("One for Anna, for me me.", new TwoFer("Anna").getTwoFer());
+		assertEquals("One for Anna, for me me.", new TwoFer().getTwoFer("Anna"));
 	}
 
 }
