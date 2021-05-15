@@ -21,7 +21,9 @@ public class TwoFerTest {
 	}
 
 	public void testThatTwoFerReturnsCorrectStringWithName() {
-		assertEquals("One for Anna, for me me.", new TwoFer().getTwoFer("Anna"));
+		String input = "Anna";
+		String expected = "One for Anna, one for me";
+		assertEquals(expected, twofer.getTwoFer(input));
 	}
 
 }
